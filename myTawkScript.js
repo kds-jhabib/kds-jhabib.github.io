@@ -16,15 +16,15 @@ Tawk_API = Tawk_API || {};
 Tawk_API.onStatusChange = function (status){
 if(status === 'online')
 {
-document.getElementById('tawkbutton').innerHTML = '<a href="javascript:void(Tawk_API.toggle())">Online - Click to chat</a>';
+document.getElementById('tawkbutton').innerHTML = '<div class="alert alert-success" role="alert"><a href="javascript:void(Tawk_API.toggle())">IT Support are now manning Live Chat - Click to chat</a></div>';
 }
 else if(status === 'away')
 {
-document.getElementById('tawkbutton').innerHTML = 'We are currently away';
+document.getElementById('tawkbutton').innerHTML = '<div class="alert alert-warning" role="alert">We are away for a short while, we will be back soon.</div>';
 }
 else if(status === 'offline')
 {
-document.getElementById('tawkbutton').innerHTML = 'Live chat is Offline';
+document.getElementById('tawkbutton').innerHTML = '<div class="alert alert-secondary" role="alert">Live chat is Offline</div>';
 }
 };
 // End of tawk.to Status Code
